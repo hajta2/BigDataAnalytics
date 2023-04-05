@@ -1,0 +1,21 @@
+{
+    "name": "My Dev Container",
+    "dockerComposeFile": "./docker-compose.yaml",
+    "workspaceFolder": "/workspace",
+    "service": "spark",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "donjayamanne.python-extension-pack",
+                "EliverLara.andromeda",
+                "GitHub.copilot",
+                "mechatroner.rainbow-csv"
+            ],
+            "settings": {
+                "python.pythonPath": "/usr/bin/python3"
+            }
+        }
+    },
+    "postStartCommand": "sudo service ssh restart && start-all.sh && /home/hduser/spark/sbin/start-all.sh",
+    "shutdownAction": "stopCompose"
+}
