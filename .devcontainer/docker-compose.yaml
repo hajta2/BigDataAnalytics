@@ -16,7 +16,6 @@ services:
     command: /bin/sh -c "while sleep 1000; do :; done"
     networks:
       - db_network
-    mem_limit: 4g
 
   cassandra:
     image: cassandra:3.11
@@ -27,9 +26,26 @@ services:
       - 9042:9042
     environment:
       - CASSANDRA_CLUSTER_NAME=Test
+      - CASSANDRA_USER=cassandra
+      - CASSANDRA_PASSWORD=cassandra
     networks:
       - db_network
-    mem_limit: 1g
+    mem_limit: 4g
+
+  postgres:
+    image: postgres:9.6
+    container_name: postgres
+    hostname: postgres
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=postgres
+    networks:
+      - db_network
+    mem_limit: 4g
 
 networks:
   db_network:

@@ -35,7 +35,7 @@ RUN wget https://dlcdn.apache.org/spark/spark-3.3.2/spark-3.3.2-bin-hadoop3.tgz 
     tar -xzf spark-3.3.2-bin-hadoop3.tgz && \
     mv spark-3.3.2-bin-hadoop3 spark && \
     rm spark-3.3.2-bin-hadoop3.tgz
-RUN pip install notebook pyspark
+RUN pip install notebook pyspark black
 # set hadoop and spark environment variables
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
 ENV HADOOP_HOME=/home/hduser/hadoop
