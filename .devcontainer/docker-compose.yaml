@@ -31,6 +31,7 @@ services:
     networks:
       - db_network
     mem_limit: 4g
+
   postgres:
     image: postgres:9.6
     container_name: postgres
@@ -57,7 +58,7 @@ services:
       - MONGO_INITDB_DATABASE=test
     networks:
       - db_network
-    mem_limit: 4g
+    mem_limit: 2g
 
 networks:
   db_network:

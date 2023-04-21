@@ -9,7 +9,8 @@
                 "donjayamanne.python-extension-pack",
                 "EliverLara.andromeda",
                 "GitHub.copilot",
-                "mechatroner.rainbow-csv"
+                "mechatroner.rainbow-csv",
+                "vscodevim.vim",
             ],
             "settings": {
                 "python.pythonPath": "/usr/bin/python3"
