@@ -6,11 +6,14 @@
     "customizations": {
         "vscode": {
             "extensions": [
-                "donjayamanne.python-extension-pack",
                 "EliverLara.andromeda",
                 "GitHub.copilot",
                 "mechatroner.rainbow-csv",
-                "vscodevim.vim",
+                //"vscodevim.vim",
+                "ms-python.python",
+                "ms-toolsai.jupyter",
+                "ms-toolsai.jupyter-keymap",
+                "ms-python.vscode-pylance"
             ],
             "settings": {
                 "python.pythonPath": "/usr/bin/python3"
