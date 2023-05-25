@@ -17,48 +17,48 @@ services:
     # networks:
     #   - db_network
 
-    # cassandra:
-    #   image: cassandra:3.11
-    #   container_name: cassandra
-    #   hostname: cassandra
-    #   restart: always
-    #   ports:
-    #     - 9042:9042
-    #   environment:
-    #     - CASSANDRA_CLUSTER_NAME=Test
-    #     - CASSANDRA_USER=cassandra
-    #     - CASSANDRA_PASSWORD=cassandra
-    #   networks:
-    #     - db_network
-    #   mem_limit: 4g
+    #   cassandra:
+    #     image: cassandra:3.11
+    #     container_name: cassandra
+    #     hostname: cassandra
+    #     restart: always
+    #     ports:
+    #       - 9042:9042
+    #     environment:
+    #       - CASSANDRA_CLUSTER_NAME=Test
+    #       - CASSANDRA_USER=cassandra
+    #       - CASSANDRA_PASSWORD=cassandra
+    #     networks:
+    #       - db_network
+    #     mem_limit: 4g
 
-    # postgres:
-    #   image: postgres:9.6
-    #   container_name: postgres
-    #   hostname: postgres
-    #   restart: always
-    #   ports:
-    #     - 5432:5432
-    #   environment:
-    #     - POSTGRES_USER=postgres
-    #     - POSTGRES_PASSWORD=postgres
-    #     - POSTGRES_DB=postgres
-    #   networks:
-    #     - db_network
-    #   mem_limit: 4g
+    #   postgres:
+    #     image: postgres:9.6
+    #     container_name: postgres
+    #     hostname: postgres
+    #     restart: always
+    #     ports:
+    #       - 5432:5432
+    #     environment:
+    #       - POSTGRES_USER=postgres
+    #       - POSTGRES_PASSWORD=postgres
+    #       - POSTGRES_DB=postgres
+    #     networks:
+    #       - db_network
+    #     mem_limit: 4g
 
-    # mongo:
-    #   image: mongo:3.6
-    #   container_name: mongo
-    #   hostname: mongo
-    #   restart: always
-    #   ports:
-    #     - 27017:27017
-    #   environment:
-    #     - MONGO_INITDB_DATABASE=test
-    #   networks:
-    #     - db_network
-    #   mem_limit: 2g
+    #   mongo:
+    #     image: mongo:3.6
+    #     container_name: mongo
+    #     hostname: mongo
+    #     restart: always
+    #     ports:
+    #       - 27017:27017
+    #     environment:
+    #       - MONGO_INITDB_DATABASE=test
+    #     networks:
+    #       - db_network
+    #     mem_limit: 2g
 
     # networks:
     #   db_network:
